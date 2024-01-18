@@ -1,5 +1,5 @@
 {
-    "intro": "I love to learn new things and experiment with new systems!\n\nThese are some of the major engines, languages, and other technologies I've worked with:",
+    "intro": "I love to learn new things and experiment with new systems!\nThese are some of the major engines, languages, and other technologies I've worked with:",
     "skills": [
         {
             "title": "Game Engines",
@@ -40,6 +40,10 @@
                 {
                     "icon": "images/skills/js.png",
                     "title": "JavaScript"
+                },
+                {
+                    "icon": "images/skills/lua.png",
+                    "title": "Lua"
                 }
         ]},
         {
@@ -50,16 +54,16 @@
                     "title": "Git"
                 },
                 {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
+                    "icon": "images/skills/blender.png",
+                    "title": "Blender"
+                },
+                {
+                    "icon": "images/skills/aws.png",
+                    "title": "AWS"
                 },
                 {
                     "icon": "images/skills/react.png",
                     "title": "React"
-                },
-                {
-                    "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
                 }
             ]
         }

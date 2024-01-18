@@ -1,31 +1,33 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "JP-EN Translator",
+            "subtitle": "EISYS, Inc",
+            "workType": "Subcontract, Remote",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Use CAT tools to translate independent anime, games, and more.",
+                "In charge of projects as large as 200,000 characters, and have never missed a deadline."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "08/2023 – Present"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "title": "Programming Instructor",
+            "subtitle": "iD Tech",
+            "workType": "Fulltime, Seasonal",
             "workDescription": [
-                "Worked on abc."
+                "Taught VR game design, C# and python programming, and more to students ages 9-15.",
+                "Responsible for the education and safety of my class each week (up to 10 students)."
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "04/2022 – 08/2022"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Engineering Associate",
+            "subtitle": "Computech Manufacturing Co.",
+            "workType": "Permanent Employee",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Lead in-house automation efforts and travelled to customer facilities to install robotic solutions.",
+                "Designed a Java plugin for UR Robot arms to automatically generate robotic welding routines.",
+                "Organized a fleet of MiR AMRs to intelligently transport pallets on a customer's factory floor."
             ],
             "dateText": "09/20XX – 01/20YY"
         }
