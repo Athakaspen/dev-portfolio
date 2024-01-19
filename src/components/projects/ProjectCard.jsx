@@ -50,7 +50,10 @@ const ProjectCard = (props) => {
         text={theme.bsSecondaryVariant}
       >
         <Card.Img variant="top" src={project?.image} />
-        <Card.Body>
+        <Card.Body style={{
+          paddingBottom: 0,
+        }}
+        >
           <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>
             {parseBodyText(project.bodyText)}

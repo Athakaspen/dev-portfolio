@@ -35,7 +35,7 @@
 
  .navbar__link:hover::after {
   visibility: visible;
-  width: 40%;
+  width: 42%;
 }
 
 .navbar__link--active::after {
@@ -145,6 +145,27 @@ section.timeline-card-content div.card-description > p {
 .header {
   font-size: 3em;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
+
+/*taken from create-react-app spinner*/
+.App-logo {
+  height: 26vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
