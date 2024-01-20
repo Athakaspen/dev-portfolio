@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/chichen.gif",
+            "image" : "images/projects/chichen.webp",
             "title": "Exploding Chickens",
             "bodyText": "- Multiplayer Party Game made in Godot\n - Features custom destructible terrain, integrated with in-engine physics\n - Turn-based combat including cutscenes with camera movement",
             "links": [
@@ -96,7 +96,7 @@
             ]
         },
         {
-            "image" : "images/projects/alleylogo.gif",
+            "image" : "images/projects/alleylogo.webp",
             "title": "3D Logo for The Alley",
             "bodyText": "- Animated 3D Logo commissioned by The Alley Barcade.\n - Delivered video as well as reusable exported 3D model files",
             "tags" : [
@@ -150,7 +150,7 @@
         {
             "image" : "images/projects/silentwitch.webp",
             "title": "Silent Witch Manga - Fan Translation",
-            "bodyText": "- Unnoficial independent translation of the manga Silent Witch, prologue\n - Did all translation, image editing, and typesetting\n",
+            "bodyText": "- Unofficial independent translation of the manga Silent Witch, prologue\n - Did all translation, image editing, and typesetting\n",
             "links": [
                 {
                     "text": "Read it here",
@@ -186,7 +186,7 @@
             ]
         },
         {
-            "image": "images/projects/weldtools.gif",
+            "image": "images/projects/weldtools.webp",
             "title": "WeldTools",
             "bodyText": "- Java plugin for the UR Robots Polyscope interface\n - UI made with Java Swing framework \n - Now a core part of the parent company's flagship product, CoboWeld by Melton",
             "links": [
