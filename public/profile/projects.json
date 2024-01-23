@@ -26,7 +26,7 @@
             ]
         },
         {
-            "image" : "images/projects/nightfall-25s.webp",
+            "image" : "images/projects/nightfall-new.webp",
             "title": "Nightfall",
             "bodyText": "- 3D Unity Survival Game\n - Features a dynamic difficulty system that scales with progression\n - Dynamic soundscape, skybox, ocean tides, and more",
             "links": [
@@ -186,7 +186,7 @@
             ]
         },
         {
-            "image": "images/projects/weldtools.webp",
+            "image": "images/projects/weldtools-small.webp",
             "title": "WeldTools",
             "bodyText": "- Java plugin for the UR Robots Polyscope interface\n - UI made with Java Swing framework \n - Now a core part of the parent company's flagship product, CoboWeld by Melton",
             "links": [
