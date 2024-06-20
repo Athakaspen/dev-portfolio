@@ -109,7 +109,7 @@
         {
             "image" : "images/projects/artorius.webp",
             "title": "Artorius",
-            "bodyText": "- Retro-style bullet hell game in Pico-8 \n - All programming in strictly functional Lua",
+            "bodyText": "- Retro-style bullet hell game in Pico-8 \n - All programming in strictly functional Lua \n - Really fun once you're good at it, just trust me",
             "links": [
                 {
                     "text": "Play it here",
