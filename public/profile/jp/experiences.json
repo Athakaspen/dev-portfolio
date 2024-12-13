@@ -1,0 +1,45 @@
+{
+    "experiences": [
+        {
+            "title": "Server Programmer - Ingame",
+            "subtitle": "Soft Gear",
+            "workType": "Fulltime",
+            "workDescription": [
+                "Working on a large project from a known IP in Unreal Engine",
+                "In charge of ingame implementation like skills and status effects, as well as weekly server release and deployment."
+            ],
+            "dateText": "08/2024 – Now"
+        },
+        {
+            "title": "JP-EN Translator",
+            "subtitle": "viviON, Inc",
+            "workType": "Subcontract, Remote",
+            "workDescription": [
+                "Used CAT tools to translate independent anime, games, and more.",
+                "Worked on projects as large as 800,000 characters, and never missed a deadline."
+            ],
+            "dateText": "08/2023 – 06/2024"
+        },
+        {
+            "title": "Programming Instructor",
+            "subtitle": "iD Tech",
+            "workType": "Fulltime, Seasonal",
+            "workDescription": [
+                "Taught VR Game Design in Unity and Unreal Engine, C# and Python programming, and 3D Modelling.",
+                "Responsible for the education and safety of my class each week (up to 10 students, age 9-15)."
+            ],
+            "dateText": "04/2022 – 08/2022"
+        },
+        {
+            "title": "Engineering Associate",
+            "subtitle": "Computech Manufacturing Co.",
+            "workType": "Permanent Employee",
+            "workDescription": [
+                "Lead in-house automation efforts and travelled to customer facilities to install robotic solutions.",
+                "Designed a Java plugin for UR Robot arms to automatically generate robotic welding routines.",
+                "Organized a fleet of MiR AMRs to intelligently transport pallets on a customer's factory floor."
+            ],
+            "dateText": "11/2018 – 02/2020"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "logo" : {
+        "source": "images/fredbot.png",
+        "height" : 60,
+        "width" : 42
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Experience",
+            "href": "/experience"
+        },
+        {
+            "title": "Education",
+            "href": "/education"
+        }
+    ]
+
+}

@@ -1,14 +1,24 @@
 {
     "experiences": [
         {
+            "title": "Server Programmer - Ingame",
+            "subtitle": "Soft Gear",
+            "workType": "Fulltime",
+            "workDescription": [
+                "Working on a large project from a known IP in Unreal Engine",
+                "In charge of ingame implementation like skills and status effects, as well as weekly server release and deployment."
+            ],
+            "dateText": "08/2024 – Now"
+        },
+        {
             "title": "JP-EN Translator",
-            "subtitle": "EISYS, Inc",
+            "subtitle": "viviON, Inc",
             "workType": "Subcontract, Remote",
             "workDescription": [
                 "Used CAT tools to translate independent anime, games, and more.",
                 "Worked on projects as large as 800,000 characters, and never missed a deadline."
             ],
-            "dateText": "08/2023 – 05/2024"
+            "dateText": "08/2023 – 06/2024"
         },
         {
             "title": "Programming Instructor",

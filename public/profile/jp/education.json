@@ -1,0 +1,19 @@
+{
+    "education":[
+        {
+            "title": "Aug 2019 - Dec 2023",
+            "cardTitle": "BS, Computer Science",
+            "cardSubtitle":"Missouri S&T University, Rolla",
+            "cardDetailedText": "4.0 GPA",
+            "icon" : {
+                "src": "images/education/gradcap.png"
+            }
+        },
+        {
+            "title": "May 2019",
+            "cardTitle": "High School",
+            "cardSubtitle":"My Hometown, Missouri",
+            "cardDetailedText": "Summa Cum Laude"
+        }
+    ]
+}

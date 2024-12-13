@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
+import enEndpoints from '../constants/endpoints';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
@@ -17,7 +17,7 @@ function Education(props) {
   const [mode, setMode] = useState('VERTICAL_ALTERNATING');
 
   useEffect(() => {
-    fetch(endpoints.education, {
+    fetch(enEndpoints.education, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -59,6 +59,7 @@ function Education(props) {
                   cardBgColor: theme.chronoTheme.cardBgColor,
                   cardForeColor: theme.chronoTheme.cardForeColor,
                   titleColor: theme.chronoTheme.titleColor,
+                  titleColorActive: theme.chronoTheme.titleColor,
                 }}
               >
                 <div className="chrono-icons">

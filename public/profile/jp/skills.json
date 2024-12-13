@@ -1,0 +1,74 @@
+{
+    "intro": "I love to learn new things and experiment with new systems!\nThese are some of the major engines, languages, and other technologies I've worked with:",
+    "skills": [
+        {
+            "title": "Game Engines",
+            "items" : [
+                {
+                    "icon": "images/skills/godot.png",
+                    "title": "Godot"
+                },
+                {
+                    "icon": "images/skills/unity.png",
+                    "title": "Unity"
+                },
+                {
+                    "icon": "images/skills/unreal-grey.png",
+                    "title": "Unreal Engine"
+                }                
+            ]
+        },
+        {     
+            "title": "Languages",
+            "items" : [
+                {
+                    "icon": "images/skills/python.png",
+                    "title": "Python"
+                },
+                {
+                    "icon": "images/skills/c-plus-plus.svg",
+                    "title": "C++"
+                },
+                {
+                    "icon": "images/skills/csharp.png",
+                    "title": "C#"
+                },
+                {
+                    "icon": "images/skills/kotlin.png",
+                    "title": "Kotlin"
+                },
+                {
+                    "icon": "images/skills/java.png",
+                    "title": "Java"
+                },
+                {
+                    "icon": "images/skills/js.png",
+                    "title": "JavaScript"
+                },
+                {
+                    "icon": "images/skills/lua.png",
+                    "title": "Lua"
+                }
+        ]},
+        {
+            "title": "Frameworks & Tools",
+            "items" : [
+                {
+                    "icon": "images/skills/git.png",
+                    "title": "Git"
+                },
+                {
+                    "icon": "images/skills/blender.png",
+                    "title": "Blender"
+                },
+                {
+                    "icon": "images/skills/aws.png",
+                    "title": "AWS"
+                },
+                {
+                    "icon": "images/skills/react.png",
+                    "title": "React"
+                }
+            ]
+        }
+]}

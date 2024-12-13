@@ -1,0 +1,20 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/david-walker-29634812a/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/Athakaspen/"
+        },
+        {
+            "network" : "itch.io",
+            "href": "https://athakaspen.itch.io"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:DavidWalkerDev@gmail.com"
+        }
+    ]
+}

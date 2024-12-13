@@ -26,16 +26,20 @@
                     "title": "Python"
                 },
                 {
-                    "icon": "images/skills/java.png",
-                    "title": "Java"
+                    "icon": "images/skills/c-plus-plus.svg",
+                    "title": "C++"
                 },
                 {
                     "icon": "images/skills/csharp.png",
                     "title": "C#"
                 },
                 {
-                    "icon": "images/skills/c-plus-plus.svg",
-                    "title": "C++"
+                    "icon": "images/skills/kotlin.png",
+                    "title": "Kotlin"
+                },
+                {
+                    "icon": "images/skills/java.png",
+                    "title": "Java"
                 },
                 {
                     "icon": "images/skills/js.png",

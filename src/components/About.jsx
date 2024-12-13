@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+import enEndpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
@@ -35,7 +35,7 @@ function About(props) {
   );
 
   useEffect(() => {
-    fetch(endpoints.about, {
+    fetch(enEndpoints.about.en, {
       method: 'GET',
     })
       .then((res) => res.json())

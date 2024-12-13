@@ -1,0 +1,207 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/chichen.webp",
+            "title": "Exploding Chickens",
+            "bodyText": "- Multiplayer Party Game made in Godot\n - Features custom destructible terrain, integrated with in-engine physics\n - Turn-based combat including cutscenes with camera movement",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/exploding-chickens-and-a-few-penguins"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://github.com/Athakaspen/NotWorms"
+                }
+            ],
+            "tags" : [
+                "Godot",
+                "GDScript",
+                "2D",
+                "Game Jam",
+                "Multiplayer",
+                "Physics",
+                "Object Pooling",
+                "UI/UX"
+            ]
+        },
+        {
+            "image" : "images/projects/nightfall-new.webp",
+            "title": "Nightfall",
+            "bodyText": "- 3D Unity Survival Game\n - Features a dynamic difficulty system that scales with progression\n - Dynamic soundscape, skybox, ocean tides, and more",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/nightfall"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://github.com/Athakaspen/Nightfall"
+                }
+            ],
+            "tags" : [
+                "Unity",
+                "C#",
+                "3D",
+                "Game Jam",
+                "Interfaces & Inheritance",
+                "Animation Curves"
+            ]
+        },
+        {
+            "image" : "images/projects/galactigolf.webp",
+            "title": "GalactiGolf",
+            "bodyText": "- Online Multiplayer Golf Game, hosted on AWS \n - Up to 24 players simultaneously \n - Supports multiple simultaneous games & lobbies",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/galactigolf"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://github.com/Athakaspen/SpaceGolf"
+                }
+            ],
+            "tags" : [
+                "Godot",
+                "AWS",
+                "Online Multiplayer",
+                "Networking",
+                "GDScript",
+                "2D",
+                "Physics",
+                "Game Jam"
+            ]
+        },
+        {
+            "image" : "images/projects/rainbowescape.webp",
+            "title": "Rainbow Escape",
+            "bodyText": "- Point-and-Click Adventure Game made with Godot \n - 25+ screens, more than 10 puzzles, and 2 minigames \n - Picked up by several puzzle game blogs",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/rainbow-escape"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://github.com/Athakaspen/MagicEscape"
+                }
+            ],
+            "tags" : [
+                "Godot",
+                "GDScript",
+                "2D",
+                "Game Jam",
+                "Puzzle Design"
+            ]
+        },
+        {
+            "image" : "images/projects/alleylogo.webp",
+            "title": "3D Logo for The Alley",
+            "bodyText": "- Animated 3D Logo commissioned by The Alley Barcade.\n - Delivered video as well as reusable exported 3D model files",
+            "tags" : [
+                "Blender",
+                "3D Modelling",
+                "Animation",
+                "Video Editing"
+            ]
+        },
+        {
+            "image" : "images/projects/artorius.webp",
+            "title": "Artorius",
+            "bodyText": "- Retro-style bullet hell game in Pico-8 \n - All programming in strictly functional Lua \n - Really fun once you're good at it, just trust me",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/Artorius"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://www.lexaloffle.com/bbs/?pid=89701#p"
+                }
+            ],
+            "tags" : [
+                "Pico 8",
+                "Lua",
+                "3D",
+                "Game Jam",
+                "Object Pooling",
+                "Animation"
+            ]
+        },
+        {
+            "image" : "images/projects/pointerdrop.webp",
+            "title": "Pointer Drop",
+            "bodyText": "- Physics-based flash game made for the GMTK Game Jam\n - Placed in top 2% of over 5000 entries \n",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/pointer-drop"
+                }
+            ],
+            "tags" : [
+                "Godot",
+                "GDScript",
+                "2D",
+                "Physics",
+                "Game Jam"
+            ]
+        },
+        {
+            "image" : "images/projects/silentwitch.webp",
+            "title": "Silent Witch Manga - Fan Translation",
+            "bodyText": "- Unofficial independent translation of the manga Silent Witch, prologue\n - Did all translation, image editing, and typesetting\n",
+            "links": [
+                {
+                    "text": "Read it here",
+                    "href": "https://mangadex.org/chapter/8ad6c40c-08c4-4fd1-bd99-c820b0ee3973/2"
+                }
+            ],
+            "tags" : [
+                "Translation",
+                "Typesetting",
+                "Photoshop"
+            ]
+        },
+        {
+            "image" : "images/projects/pinball.gif",
+            "title": "Uber Pinball",
+            "bodyText": "- Simple 3D Unity Pinball Game\n - Made by a team of 4 students, lead by me\n - All models and code are original",
+            "links": [
+                {
+                    "text": "Play it here",
+                    "href": "https://athakaspen.itch.io/uber-pinball"
+                },
+                {
+                    "text": "Source Code",
+                    "href": "https://github.com/Athakaspen/UberPinball"
+                }
+            ],
+            "tags" : [
+                "Unity",
+                "3D",
+                "C#",
+                "Team Project",
+                "Physics"
+            ]
+        },
+        {
+            "image": "images/projects/weldtools-small.webp",
+            "title": "WeldTools",
+            "bodyText": "- Java plugin for the UR Robots Polyscope interface\n - UI made with Java Swing framework \n - Now a core part of the parent company's flagship product, CoboWeld by Melton",
+            "links": [
+                {
+                    "text": "CoboWeld Website",
+                    "href": "https://www.coboweld.com/coboweldmig/"
+                }
+            ],
+            "tags" : [
+                "Java",
+                "Swing",
+                "UR Robots",
+                "UI/UX"
+            ]
+        }
+
+    ]
+}
