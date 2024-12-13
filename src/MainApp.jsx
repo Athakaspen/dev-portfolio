@@ -4,6 +4,7 @@ import FallbackSpinner from './components/FallbackSpinner';
 import NavBarWithRouter from './components/NavBar';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
+import Singleton from './components/Singleton';
 
 function MainApp() {
   const [data, setData] = useState(null);
@@ -32,7 +33,7 @@ function MainApp() {
                     key={route.headerTitle}
                     path={route.path}
                     component={() => (
-                      <SectionComponent header={route.headerTitle} />
+                      <SectionComponent header={route.headerTitle} lang={Singleton.lang} />
                     )}
                   />
                 );

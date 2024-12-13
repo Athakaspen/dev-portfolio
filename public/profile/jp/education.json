@@ -1,18 +1,18 @@
 {
     "education":[
         {
-            "title": "Aug 2019 - Dec 2023",
-            "cardTitle": "BS, Computer Science",
-            "cardSubtitle":"Missouri S&T University, Rolla",
+            "title": "2019年8月 - 2023年12月",
+            "cardTitle": "学士号（情報学）",
+            "cardSubtitle":"ミズーリ州立工科大学、ローラ",
             "cardDetailedText": "4.0 GPA",
             "icon" : {
                 "src": "images/education/gradcap.png"
             }
         },
         {
-            "title": "May 2019",
-            "cardTitle": "High School",
-            "cardSubtitle":"My Hometown, Missouri",
+            "title": "2019年5月",
+            "cardTitle": "高等学校卒業",
+            "cardSubtitle":"ミズーリ",
             "cardDetailedText": "Summa Cum Laude"
         }
     ]

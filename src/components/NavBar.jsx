@@ -1,10 +1,14 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {
+  Navbar, Nav, Container, Button,
+} from 'react-bootstrap';
 import React, { useEffect, useState, useContext } from 'react';
 import { withRouter } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
+import Singleton from './Singleton';
+import jpEndpoints from '../constants/jpEndpoints';
 import ThemeToggler from './ThemeToggler';
+import enEndpoints from '../constants/endpoints';
 
 const styles = {
   logoStyle: {
@@ -40,15 +44,36 @@ const NavBar = () => {
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  let endpoints = jpEndpoints;
 
-  useEffect(() => {
+  const refreshData = () => {
     fetch(endpoints.navbar, {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
+  };
+
+  useEffect(() => {
+    refreshData();
   }, []);
+
+  const history = useHistory();
+
+  const change = () => {
+    if (Singleton.lang === 'ja') {
+      Singleton.lang = 'en';
+      endpoints = enEndpoints;
+      refreshData();
+      history.push('/');
+    } else {
+      Singleton.lang = 'ja';
+      endpoints = jpEndpoints;
+      refreshData();
+      history.push('/');
+    }
+  };
 
   return (
     <Navbar
@@ -110,6 +135,9 @@ const NavBar = () => {
           </Nav>
           <ThemeToggler
             onClick={() => setExpanded(false)}
+          />
+          <Button
+            onClick={() => change()}
           />
         </Navbar.Collapse>
       </Container>

@@ -5,19 +5,30 @@ import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { ThemeContext } from 'styled-components';
 import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/education.css';
 
 function Education(props) {
   const theme = useContext(ThemeContext);
-  const { header } = props;
+  const { header, lang } = props;
   const [data, setData] = useState(null);
   const [width, setWidth] = useState('50vw');
   const [mode, setMode] = useState('VERTICAL_ALTERNATING');
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
-    fetch(enEndpoints.education, {
+    updateLang();
+    fetch(endpoints.education, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -82,6 +93,7 @@ function Education(props) {
 
 Education.propTypes = {
   header: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
 export default Education;

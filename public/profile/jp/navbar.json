@@ -6,27 +6,27 @@
     },
     "sections": [
         {
-            "title": "Home",
+            "title": "ホーム",
             "href": "/"
         },
         {
-            "title": "About",
+            "title": "概要",
             "href": "/about"
         },
         {
-            "title": "Skills",
+            "title": "スキル",
             "href": "/skills"
         },
         {
-            "title": "Projects",
+            "title": "プロジェクト",
             "href": "/projects"
         },
         {
-            "title": "Experience",
+            "title": "職歴",
             "href": "/experience"
         },
         {
-            "title": "Education",
+            "title": "学歴",
             "href": "/education"
         }
     ]

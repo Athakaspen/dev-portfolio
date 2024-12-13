@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import Header from './Header';
 import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import FallbackSpinner from './FallbackSpinner';
+// import Singleton from './Singleton';
 
 const styles = {
   introTextContainer: {
@@ -25,7 +27,7 @@ const styles = {
 };
 
 function About(props) {
-  const { header } = props;
+  const { header, lang } = props;
   const [data, setData] = useState(null);
 
   const parseIntro = (text) => (
@@ -34,8 +36,18 @@ function About(props) {
     />
   );
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
-    fetch(enEndpoints.about.en, {
+    updateLang();
+    fetch(endpoints.about, {
       method: 'GET',
     })
       .then((res) => res.json())
@@ -70,6 +82,7 @@ function About(props) {
 
 About.propTypes = {
   header: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
 export default About;
