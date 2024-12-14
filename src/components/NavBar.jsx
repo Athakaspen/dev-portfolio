@@ -23,6 +23,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '100px',
+    transition: 'all 0.50s linear',
   },
 };
 
@@ -93,6 +94,7 @@ const NavBar = (props) => {
       variant={theme.bsPrimaryVariant}
       className="navbar-custom"
       expanded={expanded}
+      style={{ transition: 'all 0.50s linear' }}
     >
       <Container>
         {data?.logo && (
