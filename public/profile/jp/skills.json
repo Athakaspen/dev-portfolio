@@ -1,8 +1,8 @@
 {
-    "intro": "I love to learn new things and experiment with new systems!\nThese are some of the major engines, languages, and other technologies I've worked with:",
+    "intro": "新しい言語とシステムを学ぶことが趣味です。\nこれらは今まで主に経験を積んできたエンジン、言語、サービスなど：",
     "skills": [
         {
-            "title": "Game Engines",
+            "title": "ゲームエンジン",
             "items" : [
                 {
                     "icon": "images/skills/godot.png",
@@ -19,7 +19,7 @@
             ]
         },
         {     
-            "title": "Languages",
+            "title": "言語",
             "items" : [
                 {
                     "icon": "images/skills/python.png",
@@ -51,7 +51,7 @@
                 }
         ]},
         {
-            "title": "Frameworks & Tools",
+            "title": "フレームワーク、ツールなど",
             "items" : [
                 {
                     "icon": "images/skills/git.png",

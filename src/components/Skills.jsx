@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
@@ -20,7 +21,7 @@ const styles = {
 };
 
 function Skills(props) {
-  const { header } = props;
+  const { header, lang } = props;
   const [data, setData] = useState(null);
 
   const renderSkillsIntro = (intro) => (
@@ -29,7 +30,17 @@ function Skills(props) {
     </h4>
   );
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
+    updateLang();
     fetch(endpoints.skills, {
       method: 'GET',
     })
@@ -72,6 +83,7 @@ function Skills(props) {
 
 Skills.propTypes = {
   header: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
 export default Skills;

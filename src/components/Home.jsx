@@ -3,7 +3,9 @@ import Typewriter from 'typewriter-effect';
 import { Button } from 'react-bootstrap';
 import { ThemeContext } from 'styled-components';
 import Fade from 'react-reveal';
-import endpoints from '../constants/endpoints';
+import PropTypes from 'prop-types';
+import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -28,10 +30,21 @@ const styles = {
   },
 };
 
-function Home() {
+function Home(props) {
+  const { lang } = props;
   const [data, setData] = useState(null);
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
+    updateLang();
     fetch(endpoints.home, {
       method: 'GET',
     })
@@ -48,7 +61,9 @@ function Home() {
         <img src={data?.image} className="App-logo" alt="logo" />
         <h1 style={styles.nameStyle}>{data?.name}</h1>
         <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+          {(lang === 'en')
+            ? <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+            : <h2 style={styles.inlineChild}>世界最強</h2>}
           <Typewriter
             options={{
               loop: true,
@@ -65,12 +80,16 @@ function Home() {
             window.location.href = '/projects';
           }}
         >
-          See My Work
+          {data?.see_projects}
         </Button>
         <Social />
       </div>
     </Fade>
   ) : <FallbackSpinner />;
 }
+
+Home.propTypes = {
+  lang: PropTypes.string.isRequired,
+};
 
 export default Home;

@@ -4,7 +4,8 @@ import { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import ProjectCard from './projects/ProjectCard';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -19,11 +20,21 @@ const styles = {
 
 const Projects = (props) => {
   const theme = useContext(ThemeContext);
-  const { header } = props;
+  const { header, lang } = props;
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
+    updateLang();
     fetch(endpoints.projects, {
       method: 'GET',
     })
@@ -54,7 +65,7 @@ const Projects = (props) => {
                   variant={theme.bsSecondaryVariant}
                   onClick={() => setShowMore(true)}
                 >
-                  show more
+                  {data?.show_more}
                 </Button>
                 )}
             </Container>
@@ -66,6 +77,7 @@ const Projects = (props) => {
 
 Projects.propTypes = {
   header: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
 export default Projects;

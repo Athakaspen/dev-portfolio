@@ -1,45 +1,44 @@
 {
     "experiences": [
         {
-            "title": "Server Programmer - Ingame",
-            "subtitle": "Soft Gear",
-            "workType": "Fulltime",
+            "title": "サーバーエンジニア・インゲーム",
+            "subtitle": "株式会社ソフトギア",
+            "workType": "正社員、東京都新宿区",
             "workDescription": [
-                "Working on a large project from a known IP in Unreal Engine",
-                "In charge of ingame implementation like skills and status effects, as well as weekly server release and deployment."
+                "Unreal Engine 5で有名IPの大型プロジェクト",
+                "インゲーム機能（スキル、ステータス効果）を担当"
             ],
-            "dateText": "08/2024 – Now"
+            "dateText": "2024年8月～現在"
         },
         {
-            "title": "JP-EN Translator",
-            "subtitle": "viviON, Inc",
-            "workType": "Subcontract, Remote",
+            "title": "日英翻訳者",
+            "subtitle": "株式会社viviON",
+            "workType": "業務委託、リモート",
             "workDescription": [
-                "Used CAT tools to translate independent anime, games, and more.",
-                "Worked on projects as large as 800,000 characters, and never missed a deadline."
+                "CATツールを使って個人作品（アニメ、ゲーム、音声作品など）をローカライズ",
+                "他の翻訳者と協力して80万文字以上の大型プロジェクトを担当"
             ],
-            "dateText": "08/2023 – 06/2024"
+            "dateText": "2023年8月～2024年6月"
         },
         {
-            "title": "Programming Instructor",
+            "title": "プログラミングインストラクター",
             "subtitle": "iD Tech",
-            "workType": "Fulltime, Seasonal",
+            "workType": "フルタイム、シカゴ市",
             "workDescription": [
-                "Taught VR Game Design in Unity and Unreal Engine, C# and Python programming, and 3D Modelling.",
-                "Responsible for the education and safety of my class each week (up to 10 students, age 9-15)."
+                "UnityとUnrealでVRゲーム開発、C#とPythonプログラミング、3Dモデリングのコースを担当",
+                "10名の子供（9~15歳）の教示と安全の責任を負う"
             ],
-            "dateText": "04/2022 – 08/2022"
+            "dateText": "2022年4月～2022年8月"
         },
         {
-            "title": "Engineering Associate",
+            "title": "エンジニア",
             "subtitle": "Computech Manufacturing Co.",
-            "workType": "Permanent Employee",
+            "workType": "正社員、ミズーリ州",
             "workDescription": [
-                "Lead in-house automation efforts and travelled to customer facilities to install robotic solutions.",
-                "Designed a Java plugin for UR Robot arms to automatically generate robotic welding routines.",
-                "Organized a fleet of MiR AMRs to intelligently transport pallets on a customer's factory floor."
+                "社内自動化と改善活動に加え、依頼先の施設まで出張してソリューション設置にも参加",
+                "溶接作業を簡単に行わせるためのURロボットJavaプラグインを作成"
             ],
-            "dateText": "11/2018 – 02/2020"
+            "dateText": "2018年11月～2020年2月"
         }
     ]
 }

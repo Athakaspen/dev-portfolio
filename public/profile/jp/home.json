@@ -1,5 +1,6 @@
 {
     "image": "images/fredbot.png",
     "name": "Hi, I'm Athakaspen.",
-    "roles": ["a Game Designer", "a JP-EN Translator", "a Back-End Developer"]
+    "roles": ["のゲームデザイナー", "の日英翻訳者", "のバックエンドエンジニア"],
+    "see_projects": "プロジェクトを見る"
 }

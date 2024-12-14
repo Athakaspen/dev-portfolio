@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
 import Fade from 'react-reveal';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+import enEndpoints from '../constants/endpoints';
+import jpEndpoints from '../constants/jpEndpoints';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/experience.css';
 
@@ -32,10 +33,20 @@ const styles = {
 
 function Experience(props) {
   const theme = useContext(ThemeContext);
-  const { header } = props;
+  const { header, lang } = props;
   const [data, setData] = useState(null);
 
+  let endpoints = enEndpoints;
+  const updateLang = () => {
+    if (lang === 'ja') {
+      endpoints = jpEndpoints;
+    } else {
+      endpoints = enEndpoints;
+    }
+  };
+
   useEffect(() => {
+    updateLang();
     fetch(endpoints.experiences, {
       method: 'GET',
     })
@@ -107,6 +118,7 @@ function Experience(props) {
 
 Experience.propTypes = {
   header: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired,
 };
 
 export default Experience;

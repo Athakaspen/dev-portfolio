@@ -1,4 +1,5 @@
 {
+    "show_more" : "Show More",
     "projects" : [
         {
             "image" : "images/projects/chichen.webp",
@@ -126,6 +127,7 @@
                 "3D",
                 "Game Jam",
                 "Object Pooling",
+                "Music",
                 "Animation"
             ]
         },
@@ -144,6 +146,7 @@
                 "GDScript",
                 "2D",
                 "Physics",
+                "Puzzle",
                 "Game Jam"
             ]
         },

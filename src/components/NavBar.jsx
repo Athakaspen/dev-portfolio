@@ -3,9 +3,10 @@ import {
 } from 'react-bootstrap';
 import React, { useEffect, useState, useContext } from 'react';
 import { withRouter } from 'react-router';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
-import Singleton from './Singleton';
+// import Singleton from './Singleton';
+import PropTypes from 'prop-types';
 import jpEndpoints from '../constants/jpEndpoints';
 import ThemeToggler from './ThemeToggler';
 import enEndpoints from '../constants/endpoints';
@@ -40,7 +41,8 @@ const InternalNavLink = styled(NavLink)`
   }
 `;
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const { lang, changeLang } = props;
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
@@ -59,19 +61,19 @@ const NavBar = () => {
     refreshData();
   }, []);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   const change = () => {
-    if (Singleton.lang === 'ja') {
-      Singleton.lang = 'en';
+    if (lang === 'ja') {
+      changeLang('en');
       endpoints = enEndpoints;
       refreshData();
-      history.push('/');
+      // history.push('/home');
     } else {
-      Singleton.lang = 'ja';
+      changeLang('ja');
       endpoints = jpEndpoints;
       refreshData();
-      history.push('/');
+      // history.push('/homejp');
     }
   };
 
@@ -143,6 +145,11 @@ const NavBar = () => {
       </Container>
     </Navbar>
   );
+};
+
+NavBar.propTypes = {
+  lang: PropTypes.string.isRequired,
+  changeLang: PropTypes.func.isRequired,
 };
 
 const NavBarWithRouter = withRouter(NavBar);
