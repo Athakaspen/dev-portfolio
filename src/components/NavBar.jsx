@@ -132,7 +132,7 @@ const NavBar = (props) => {
             />
             <div
               style={{
-                display: 'table', paddingLeft: '8px', paddingRight: '8px', paddingBottom: '2px',
+                display: 'table', paddingLeft: '6px', paddingRight: '6px', paddingBottom: '2px',
               }}
             >
               <h5 style={{ display: 'table-cell' }}>
