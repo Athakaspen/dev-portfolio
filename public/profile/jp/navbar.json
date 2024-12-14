@@ -4,6 +4,13 @@
         "height" : 60,
         "width" : 42
     },
+    "languageChange" : {
+        "iconWhite": "images/lang-change-white.webp",
+        "iconBlack": "images/lang-change-black.webp",
+        "text": "English",
+        "height" :28,
+        "width" : 28
+    },
     "sections": [
         {
             "title": "ホーム",

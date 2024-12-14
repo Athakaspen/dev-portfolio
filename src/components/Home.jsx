@@ -63,7 +63,7 @@ function Home(props) {
         <div style={{ flexDirection: 'row' }}>
           {(lang === 'en')
             ? <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-            : <h2 style={styles.inlineChild}>世界最強</h2>}
+            : <h2 style={styles.inlineChild}>世界最強の</h2>}
           <Typewriter
             options={{
               loop: true,

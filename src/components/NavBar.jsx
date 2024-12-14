@@ -16,6 +16,14 @@ const styles = {
     width: 50,
     height: 40,
   },
+  changeLangStyle: {
+    padding: '6px',
+    display: 'inline-flex',
+    position: 'relative',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '100px',
+  },
 };
 
 const ExternalNavLink = styled.a`
@@ -63,7 +71,7 @@ const NavBar = (props) => {
 
   // const history = useHistory();
 
-  const change = () => {
+  const swapLangauge = () => {
     if (lang === 'ja') {
       changeLang('en');
       endpoints = enEndpoints;
@@ -81,7 +89,7 @@ const NavBar = (props) => {
     <Navbar
       fixed="top"
       expand="md"
-      bg="dark"
+      bg={theme.bsPrimaryVariant}
       variant="dark"
       className="navbar-custom"
       expanded={expanded}
@@ -107,6 +115,32 @@ const NavBar = (props) => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" />
+          <Button
+            onClick={swapLangauge}
+            variant={theme.bsSecondaryVariant}
+            style={styles.changeLangStyle}
+          >
+            <img
+              src={(theme.bsPrimaryVariant === 'dark') ? data?.languageChange?.iconBlack : data?.languageChange?.iconWhite}
+              className="d-inline-block align-top"
+              alt="change langauge"
+              style={
+                data?.languageChange?.height && data?.languageChange?.width
+                  ? { height: data?.languageChange?.height, width: data?.languageChange?.width, display: 'inline-block' }
+                  : styles.logoStyle
+              }
+            />
+            <div
+              style={{
+                display: 'table', paddingLeft: '8px', paddingRight: '8px', paddingBottom: '2px',
+              }}
+            >
+              <h5 style={{ display: 'table-cell' }}>
+                {data?.languageChange?.text}
+              </h5>
+            </div>
+          </Button>
+          <div style={{ width: '16px' }} />
           <Nav>
             {data
               && data.sections?.map((section, index) => (section?.type === 'link' ? (
@@ -135,11 +169,9 @@ const NavBar = (props) => {
                 </InternalNavLink>
               )))}
           </Nav>
+          <div style={{ width: '20px' }} />
           <ThemeToggler
             onClick={() => setExpanded(false)}
-          />
-          <Button
-            onClick={() => change()}
           />
         </Navbar.Collapse>
       </Container>
