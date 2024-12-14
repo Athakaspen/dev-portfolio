@@ -90,7 +90,7 @@ const NavBar = (props) => {
       fixed="top"
       expand="md"
       bg={theme.bsPrimaryVariant}
-      variant="dark"
+      variant={theme.bsPrimaryVariant}
       className="navbar-custom"
       expanded={expanded}
     >

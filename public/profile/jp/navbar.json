@@ -1,8 +1,8 @@
 {
     "logo" : {
-        "source": "images/fredbot.png",
-        "height" : 60,
-        "width" : 42
+        "source": "images/fredbot-cropped.png",
+        "height" : 56,
+        "width" : 56
     },
     "languageChange" : {
         "iconWhite": "images/lang-change-white.webp",
